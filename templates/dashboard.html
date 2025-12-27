@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+</head>
+<body>
+    <div id="particle-canvas"></div>
+    <main class="content">
+        <div class="content-box">
+            <h1>Welcome to RELAY!</h1>
+            <br>
+            <h3>simple chat app made by Vihan Raman</h3>
+            <br>
+            <h2>What is it?</h2>
+            <p>RELAY is a simple chat app where people get to communicate in private rooms. Each private room is randomized, making chats secure.</p>
+            <br>
+            <h2>How does it work?</h2>
+            <p>RELAY runs on a Flask-SocketIO and Flask backend that handles communications between users and makes a safe user experience.</p>
+            <br>
+            <h2>How do I join?</h2>
+            <p>Just click on the button below! You'll be redirected to a home page. Have fun!</p>
+            <br>
+            <form class="redirect" method="post">
+                <button type="submit">Join Relay</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="{{url_for('static', filename='js/script.js')}}"></script>
+</body>
+</html>
